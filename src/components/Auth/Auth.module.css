@@ -1,0 +1,9 @@
+.auth {
+  display: grid;
+  place-content: center;
+  padding-top: 78.41px;
+}
+
+.auth img {
+  justify-self: center;
+}

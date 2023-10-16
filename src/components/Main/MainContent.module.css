@@ -1,0 +1,16 @@
+.maincontent {
+  padding-top: 64px;
+  padding-left: 164px;
+}
+
+@media (max-width: 1024px) {
+  .maincontent {
+    padding: 0 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .maincontent {
+    padding-inline: 16px;
+  }
+}

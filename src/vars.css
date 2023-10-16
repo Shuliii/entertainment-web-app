@@ -1,0 +1,14 @@
+:root {
+  --red: #fc4747;
+  --black: #10141e;
+  --grey: #5a698f;
+  --dark-blue: #161d2f;
+  --white: #fff;
+
+  --font-heading-L: 300 32px Outfit;
+  --font-heading-M: 300 24px Outfit;
+  --font-heading-S: 500 24px Outfit;
+  --font-heading-XS: 500 18px Outfit;
+  --font-body-M: 300 15px Outfit;
+  --font-body-S: 300 13px Outfit;
+}

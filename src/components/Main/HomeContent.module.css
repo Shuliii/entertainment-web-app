@@ -1,0 +1,260 @@
+.home {
+  color: white;
+  margin-top: 34px;
+  overflow: hidden;
+  padding-bottom: 52px;
+}
+
+@media (max-width: 1024px) {
+  .home {
+    margin-top: 33px;
+    padding-bottom: 56px;
+  }
+}
+
+.trending > h1,
+.recommend > h1 {
+  font: var(--font-heading-L);
+}
+
+@media (max-width: 600px) {
+  .home {
+    margin-top: 24px;
+    padding-bottom: 61px;
+  }
+
+  .trending > h1,
+  .recommend > h1 {
+    font: 300 20px Outfit;
+    letter-spacing: -0.31px;
+  }
+}
+
+.trending > ul {
+  margin-top: 25px;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.liContainer {
+  width: 470px;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .trending > ul {
+    margin-top: 16px;
+    gap: 16px;
+  }
+
+  .liContainer {
+    width: 240px;
+    height: 140px;
+  }
+}
+
+.liContainer > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.text > ul {
+  display: flex;
+  gap: 19px;
+  list-style-type: none;
+  font: var(--font-body-M);
+  opacity: 75%;
+  align-items: center;
+}
+
+.text > ul > li:nth-child(2) {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.text > ul > li:nth-child(2) > img {
+  width: 12px;
+  height: 12px;
+}
+
+.text > h1 {
+  font: var(--font-heading-S);
+}
+
+@media (max-width: 600px) {
+  .text {
+    bottom: 16px;
+    left: 16px;
+    gap: 4px;
+  }
+
+  .text > ul {
+    font: 300 12px Outfit;
+  }
+
+  .text > h1 {
+    font: 500 15px Outfit;
+  }
+
+  .recommend {
+    margin-top: 40px;
+    padding-right: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .recommend {
+    margin-top: 39px;
+    padding-right: 0;
+  }
+}
+
+.recommend > ul {
+  margin-top: 32px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px 40px;
+}
+
+@media (max-width: 1200px) {
+  .recommend {
+    margin-top: 39px;
+    padding-right: 0;
+  }
+
+  .recommend > ul {
+    margin-top: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px 29px;
+  }
+}
+
+@media (max-width: 600px) {
+  .recommend {
+    margin-top: 24px;
+    padding-right: 0;
+  }
+
+  .recommend > ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 15px;
+  }
+}
+
+.recommend ul li .imageContainer {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 280px;
+  max-height: 174px;
+  position: relative;
+}
+
+.recommend ul li .imageContainer img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bookmarkContainer {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  right: 16px;
+  background: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  opacity: 50%;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .bookmarkContainer {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.bookmarkContainer:hover {
+  cursor: pointer;
+  background: var(--white);
+}
+
+.bookmarkContainer:hover > .bookmarkImg path {
+  stroke: var(--dark-blue);
+}
+
+.descriptionContainer {
+  margin-top: 8px;
+  font: var(--font-body-S);
+  opacity: 75%;
+}
+
+.descriptionContainer ul {
+  display: flex;
+  gap: 19px;
+  list-style-type: none; /*maybe can edit here */
+}
+
+.descriptionContainer ul li:nth-child(1) {
+  list-style-type: none;
+}
+
+.descriptionContainer ul li:nth-child(2) {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.descriptionContainer ul li:nth-child(2) > img {
+  width: 12px;
+  height: 12px;
+}
+
+.recommend ul li h2 {
+  margin-top: 5px;
+  font: var(--font-heading-XS);
+}
+
+@media (max-width: 600px) {
+  .descriptionContainer {
+    font: 300 11px Outfit;
+  }
+
+  .descriptionContainer ul {
+    gap: 14px;
+  }
+
+  .descriptionContainer ul li:nth-child(2) {
+    gap: 2px;
+  }
+
+  .descriptionContainer ul li:nth-child(2) > img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .recommend ul li h2 {
+    margin-top: 4px;
+    font: 500 14px Outfit;
+  }
+}

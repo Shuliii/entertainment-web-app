@@ -1,0 +1,17 @@
+.main {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding-top: 23px;
+    padding-inline: 25px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding-top: 0;
+    padding-inline: 0;
+  }
+}
