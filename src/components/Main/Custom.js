@@ -32,7 +32,10 @@ const Custom = () => {
     return (
       <li>
         <div className={styles.imageContainer}>
-          <img src={item.thumbnail.regular.large} alt="" />
+          <img
+            src={require(`../../assets/thumbnails/${item.thumbnail.regular.large}`)}
+            alt=""
+          />
           <div
             className={styles.bookmarkContainer}
             onClick={() => bookmarkHandler(item)}

@@ -36,7 +36,10 @@ const Bookmark = () => {
         {movieState.map((item) => (
           <li>
             <div className={styles.imageContainer}>
-              <img src={item.thumbnail.regular.large} alt="" />
+              <img
+                src={require(`../../assets/thumbnails/${item.thumbnail.regular.large}`)}
+                alt=""
+              />
               <div
                 className={styles.bookmarkContainer}
                 onClick={() => bookmarkHandler(item)}
@@ -70,7 +73,10 @@ const Bookmark = () => {
         {tvState.map((item) => (
           <li>
             <div className={styles.imageContainer}>
-              <img src={item.thumbnail.regular.large} alt="" />
+              <img
+                src={require(`../../assets/thumbnails/${item.thumbnail.regular.large}`)}
+                alt=""
+              />
               <div
                 className={styles.bookmarkContainer}
                 onClick={() => bookmarkHandler(item)}

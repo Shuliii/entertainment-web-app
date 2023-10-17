@@ -34,10 +34,14 @@ const HomeContent = () => {
     const isBookmarked = bookmarkState.find(
       (data) => data.title === item.title
     );
+
     return (
       <li>
         <div className={styles.liContainer}>
-          <img src={item.thumbnail.trending.large} alt="" />
+          <img
+            src={require(`../../assets/thumbnails/${item.thumbnail.trending.large}`)}
+            alt=""
+          />
           <div
             className={styles.bookmarkContainer}
             onClick={() => bookmarkHandler(item)}
@@ -75,7 +79,10 @@ const HomeContent = () => {
     return (
       <li>
         <div className={styles.imageContainer}>
-          <img src={item.thumbnail.regular.large} alt="" />
+          <img
+            src={require(`../../assets/thumbnails/${item.thumbnail.regular.large}`)}
+            alt=""
+          />
           <div
             className={styles.bookmarkContainer}
             onClick={() => bookmarkHandler(item)}
