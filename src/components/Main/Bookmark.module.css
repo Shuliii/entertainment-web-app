@@ -68,9 +68,14 @@
 .imageContainer {
   border-radius: 8px;
   overflow: hidden;
-  max-width: 280px;
-  max-height: 174px;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .imageContainer {
+    max-width: 280px;
+    max-height: 174px;
+  }
 }
 
 .imageContainer > img:nth-child(1) {

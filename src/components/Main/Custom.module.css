@@ -55,9 +55,15 @@
 .custom ul li .imageContainer {
   border-radius: 8px;
   overflow: hidden;
-  max-width: 280px;
-  max-height: 174px;
+
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .custom ul li .imageContainer {
+    max-width: 280px;
+    max-height: 174px;
+  }
 }
 
 .custom ul li .imageContainer > img:nth-child(1) {
@@ -67,7 +73,7 @@
   height: 100%;
 }
 
-.custom ul li .imageContainer > img:hover {
+/* .custom ul li .imageContainer > img:hover {
   cursor: pointer;
   opacity: 50%;
   background: url("../../assets/icon-play.svg") no-repeat scroll center center;
@@ -75,7 +81,7 @@
   z-index: 5;
   top: 0;
   left: 0;
-}
+} */
 
 .bookmarkContainer {
   position: absolute;

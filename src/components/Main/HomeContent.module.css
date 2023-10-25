@@ -160,9 +160,14 @@
 .recommend ul li .imageContainer {
   border-radius: 8px;
   overflow: hidden;
-  max-width: 280px;
-  max-height: 174px;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .recommend ul li .imageContainer {
+    max-width: 280px;
+    max-height: 174px;
+  }
 }
 
 .recommend ul li .imageContainer img {
